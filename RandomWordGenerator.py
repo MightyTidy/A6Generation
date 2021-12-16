@@ -22,9 +22,9 @@ def main():
         print("\nString was : ", tempString, "\n")
         j = 0
         with open("filepath" + tempString, 'w') as file:
-            while j < 1000:
+            while j < 1000: #change this value to amount of words
                 print("\nJ is : ", j, "\n")
-                chanceInt = random.randint(1, 100)
+                chanceInt = random.randint(1, 100) #25% chance of duplicate for variety in input files.
                 if chanceInt < 25:
                     file.write(str(first500[j]))
                     file.write(" ")
