@@ -21,7 +21,7 @@ def main():
         tempString = "testfilezzthousand" + str(i) + ".txt"
         print("\nString was : ", tempString, "\n")
         j = 0
-        with open("D:\\Users\\MightyTidy\\CLionProjects\\VazquezA6Real\\VazquezA6\\cmake-build-debug\\" + tempString, 'w') as file:
+        with open("filepath" + tempString, 'w') as file:
             while j < 1000:
                 print("\nJ is : ", j, "\n")
                 chanceInt = random.randint(1, 100)
